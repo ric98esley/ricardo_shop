@@ -13,12 +13,13 @@
     border: 1px solid vars.$very-light-pink;
 }
 
-.my-order-content{
+.my-order-content {
     overflow-y: scroll;
     max-height: 50vh;
     scroll-behavior: smooth;
 }
-.my-order-content::-webkit-scrollbar{
+
+.my-order-content::-webkit-scrollbar {
     display: none;
 }
 
@@ -26,9 +27,15 @@
     display: flex;
 }
 
-.title-container img {
+.title-container div {
+    width: 20px;
+    height: 20px;
     transform: rotate(180deg);
-    margin-right: 14px;
+    margin: auto 14px auto 0;
+}
+
+.title-container div:hover {
+    cursor: pointer;
 }
 
 .title {
@@ -72,6 +79,9 @@
     font-size: vars.$md;
     font-weight: bold;
     height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 640px) {

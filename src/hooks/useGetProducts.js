@@ -9,7 +9,7 @@ const useGetProducts = (API) => {
       const response = await axios(API);
       setProducts(response.data);
     })();
-  }, []);
+  }, [API]);
 
   return products;
 };

@@ -1,25 +1,25 @@
 import React from 'react';
-import '@styles/CreateAccount.scss'
+import styles from '@styles/CreateAccount.module.scss';
 
 const CreateAccount = () => {
     return (
-        <div className="CreateAccount">
-        <div className="CreateAccount-container">
-          <h1 className="title">Create account</h1>
+        <div className={styles.CreateAccount}>
+        <div className={styles['CreateAccount-container']}>
+          <h1 className={styles.title}>Create account</h1>
     
-          <form action="/" className="form">
+          <form action="/" className={styles.form}>
             <div>
-              <label for="name" className="label">Name</label>
-              <input type="text" id="name" placeholder="Teff" className="input input-name" />
+              <label htmlFor="name" className="label">Name</label>
+              <input type="text" id="name" placeholder="Teff" className={`${styles.input} ${styles['input-name']}`} />
     
-              <label for="email" className="label">Email</label>
-              <input type="text" id="email" placeholder="platzi@example.com" className="input input-email" />
+              <label htmlFor="email" className="label">Email</label>
+              <input type="text" id="email" placeholder="platzi@example.com" className={`${styles.input} ${styles['input-email']}`} />
     
-              <label for="password" className="label">Password</label>
-              <input type="password" id="password" placeholder="*********" className="input input-password" />
+              <label htmlFor="password" className="label">Password</label>
+              <input type="password" id="password" placeholder="*********" className={`${styles.input} ${styles['input-password']}`} />
             </div>
     
-            <input type="submit" value="Create" className="primary-button CreateAccount-button" />
+            <input type="submit" value="Create" className={`${styles['primary-button']} ${styles['CreateAccount-button']}`} />
           </form>
         </div>
       </div>

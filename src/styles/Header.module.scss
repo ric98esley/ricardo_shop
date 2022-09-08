@@ -8,6 +8,7 @@
     padding: 0 24px;
     border-bottom: 1px solid vars.$very-light-pink;
     background-color: vars.$white;
+    z-index: 1;
 }
 
 .menu {
@@ -16,6 +17,10 @@
 
 .nav-logo {
     width: 100px;
+    margin: auto 0;
+}
+.nav-logo > span {
+    display: block;
 }
 
 .navbar-left ul,
@@ -54,11 +59,17 @@
 .navbar-email {
     color: vars.$very-light-pink;
     font-size: vars.$sm;
-    margin-right: 12px;
+    margin-right: 16px;
+}
+.navbar-email:hover {
+    cursor: pointer;
 }
 
 .navbar-shopping-cart {
     position: relative;
+}
+.navbar-shopping-cart:hover{
+    cursor: pointer;
 }
 
 .navbar-shopping-cart div {
@@ -79,6 +90,7 @@
 @media (max-width: 640px) {
     .menu {
         display: block;
+        margin: auto 0;
     }
 
     .navbar-left ul {

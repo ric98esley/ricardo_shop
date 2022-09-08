@@ -3,7 +3,7 @@
     width: 240px;
 }
 
-.ProductItem img {
+.ProductItem div img {
     width: 240px;
     height: 240px;
     border-radius: 20px;
@@ -20,8 +20,11 @@
 .product-info figure {
     margin: 0;
 }
+.product-info figure:hover{
+    cursor: pointer;
+}
 
-.product-info figure img {
+.product-info figure div{
     width: 35px;
     height: 35px;
 }

@@ -2,7 +2,7 @@ import React from "react";
 import Order from "@components/Order";
 import OrderItem from "@components/OrderItem";
 
-import '@styles/Checkout.scss'
+import '@styles/Checkout.scss';
 
 const Checkout = () => {
   return (

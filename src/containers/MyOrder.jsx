@@ -17,11 +17,13 @@ const MyOrder = () => {
     const reducer = (accumator, currenteValue) => accumator + currenteValue.price;
     const sum = state.cart.reduce(reducer, 0);
     return sum;
-  }
+  };
   return (
     <aside className={styles.MyOrder}>
       <div className={styles['title-container']}>
-        <Image src={arrow} alt="arrow" onClick={() => changeToggle("cart")}/>
+        <div>
+          <Image src={arrow} alt="arrow" onClick={() => changeToggle("cart")}/>
+        </div>
         <p className={styles.title}>My order</p>
       </div>
       <div className={styles['my-order-content']}>
@@ -35,7 +37,9 @@ const MyOrder = () => {
           </p>
           <p>${sumTotal()}</p>
         </div>
-        <Link className={styles['primary-button']} href="/checkout">Checkout</Link>
+        <div  className={styles['primary-button']}>
+          <Link href="/checkout/">Checkout</Link>
+        </div>
     </aside>
   );
 };

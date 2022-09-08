@@ -19,6 +19,11 @@ const nextConfig = {
   images: {
     domains: ['placeimg.com', 'api.lorem.space'],
   },
+  // experimental: {
+  //   images: {
+  //     allowFutureImage: true,
+  //   },
+  // },
 };
 
 module.exports = nextConfig;

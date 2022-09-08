@@ -12,9 +12,12 @@
     margin: 0;
 }
 
-.OrderItem figure img {
+.OrderItem figure div {
     width: 70px;
     height: 70px;
+    
+}
+.OrderItem figure img {
     border-radius: 20px;
     object-fit: cover;
 }

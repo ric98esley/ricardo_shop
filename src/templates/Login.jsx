@@ -1,7 +1,10 @@
 import React, { useRef } from "react";
-import "@styles/Login.scss";
+import Image from "next/image";
+import Link from "next/link";
 
 import logo from "@logos/logo_yard_sale.svg";
+
+import styles from "@styles/Login.module.scss";
 
 const Login = () => {
   const form = useRef(null);
@@ -17,36 +20,36 @@ const Login = () => {
   };
 
   return (
-    <div className="Login">
-      <div className="Login-container">
-        <img src={logo} alt="logo" className="logo" />
+    <div className={styles.Login}>
+      <div className={styles['Login-container']}>
+        <Image src={logo} alt="logo" className={styles.logo} />
 
         <form action="/" className="form" ref={form}>
-          <label htmlFor="email" className="label">
+          <label htmlFor="email" className={styles.label}>
             Email address
           </label>
           <input
             type="text"
             name="email"
             placeholder="platzi@example.cm"
-            className="input input-email"
+            className={`${styles.input} ${styles['input-email']}`}
           />
 
-          <label htmlFor="password" className="label">
+          <label htmlFor="password" className={styles.label}>
             Password
           </label>
           <input
             type="password"
             name="password"
             placeholder="*********"
-            className="input input-password"
+            className={`${styles.input} ${styles['input-password']}`}
           />
 
           <button
-            className="primary-button login-button"
+            className={`${styles['primary-button']} ${styles['login-button']}`}
             onClick={handleSubmit}
           >Log in</button>
-          <a href="/">Forgot my password</a>
+          <Link href="/">Forgot my password</Link>
         </form>
 
         <button

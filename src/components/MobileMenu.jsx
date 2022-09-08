@@ -1,52 +1,53 @@
-import React from "react";
+import React from 'react';
+import Link from 'next/link';
 import styles from '@styles/MobileMenu.module.scss';
 
 const MobileMenu = () => {
   return (
-    <div className={styles.module.mobile-menu}>
+    <div className={styles['mobile-menu']}>
       <ul>
         <li>
-          <a href="/">CATEGORIES</a>
+          <Link href="/">CATEGORIES</Link>
         </li>
         <li>
-          <a href="/">All</a>
+          <Link href="/">All</Link>
         </li>
         <li>
-          <a href="/">Clothes</a>
+          <Link href="/">Clothes</Link>
         </li>
         <li>
-          <a href="/">Electronics</a>
+          <Link href="/">Electronics</Link>
         </li>
         <li>
-          <a href="/">Furnitures</a>
+          <Link href="/">Furnitures</Link>
         </li>
         <li>
-          <a href="/">Toys</a>
+          <Link href="/">Toys</Link>
         </li>
         <li>
-          <a href="/">Other</a>
+          <Link href="/">Other</Link>
         </li>
       </ul>
 
       <ul>
         <li>
-          <a href="/">My orders</a>
+          <Link href="/">My orders</Link>
         </li>
         <li>
-          <a href="/">My account</a>
+          <Link href="/">My account</Link>
         </li>
       </ul>
 
       <ul>
         <li>
-          <a href="/" className="email">
+          <Link href="/" className={styles.email}>
             platzi@example.com
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/" className="sign-out">
+          <Link href="/" className={styles['sign-out']}>
             Sign out
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
